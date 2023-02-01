@@ -18,6 +18,7 @@ img {
 
     /* COLORS */
     --BD-BGCOLOR: hsl(210, 46%, 95%);
+    --H1-COLOR: hsl(0, 0%, 100%);
     --H2-COLOR: hsl(219, 29%, 14%);
     --H2-COLOR2: hsl(0, 0%, 100%);
     --P-COLOR: hsla(217, 19%, 35%, 0.7);
@@ -36,6 +37,7 @@ img {
     :root {
         --BD-BGCOLOR: #333;
         --CARD-BGCOLOR3: hsl(0, 0%, 0%);
+        --H1-COLOR: hsla(0, 0%, 100%, 0.85);
         --H2-COLOR: hsl(220, 8%, 71%);     
         --H2-COLOR2: hsla(0, 0%, 100%, 0.85);
         --P-COLOR: hsla(0, 0%, 81%, 0.7);
@@ -53,6 +55,11 @@ body {
     display: flex;
     justify-content: center;
     align-items:center;
+}
+
+h1 {
+    font-size: 1em;
+    color: var(--H1-COLOR);
 }
 
 h2 {
@@ -134,7 +141,7 @@ span {
     color: var(--NAME-COLOR2);
 }
 
-.card1 h2, .card2 h2, .card4 h2 {
+.card2 h2, .card4 h2 {
     color: var(--H2-COLOR2);
 }
 
@@ -177,7 +184,7 @@ span {
 
 /* || 4K */
 @media screen and (min-width: 1600px) {
-    h2 {
+    h1, h2 {
         font-size: 2em;
     }
 
